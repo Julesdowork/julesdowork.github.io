@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/********** GENERAL STYLES **********/
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Ubuntu, Helvetica, "Trebuchet MS", sans-serif;
+}
+
+main {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 25px;
+  font-size: 4em;
+}
+
+h2 {
+  margin: 25px;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: Ubuntu, Helvetica, "Trebuchet MS", sans-serif;
+  border: 3px solid #00A388;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 1.5em;
+  margin: 25px;
+  color: #00A388;
+}
+
+button:hover, button:focus {
+  outline: none;
+  border: 3px solid #fff;
+  background-color: #00A388;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+main {
+  opacity: 0;
+  margin-top: 100px;
+  animation: slideFade 1s 2s forwards;
+}
+
+@keyframes slideFade {
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+/********** HEADER STYLES **********/
+header {
+  padding: 15px;
+  opacity: 0;
+  animation: fadeIn 1s linear 1s forwards;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  text-transform: uppercase;
+  margin-right: 15px;
+  padding: 15px;
+  color: #fff;
+}
+
+header a {
+  color: #000;
+}
+
+header a:hover {
+  color: #00A388;
+  text-decoration: underline;
+}
+
+.fa-bars {
+  display: none;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 630px) {
+  header {
+    padding: 15px 0;
+  }
+
+  .fa-bars {
+    display: inline;
+  }
+
+  nav ul {
+    width: 100%;
+    background-color: #00A388;
+  }
+
+  .showMenu {
+    display: none;
+  }
+
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    border-bottom: 2px groove #f7f3f3;
+    color: #f7f3f3
+  }
+
+  nav ul li:hover {
+    background-color: #f7f3f3;
+    color: #00A388;
+  }
+
+  header a {
+    color: inherit;
+    display: block;
+  }
+
+  header a:hover {
+    color: inherit;
+  }
+}
+
+/********** ABOUT STYLES **********/
+#about {
+  margin-bottom: 50px;
+}
+
+#about img {
+  margin: 25px;
+  border-radius: 50%;
+}
+
+#about ul {
+  margin: 25px auto;
+  list-style-image: url("../images/checkmark.png");
+  text-align: left;
+  width: 50%;
+}
+
+#about ul li {
+  margin: 5px 0;
+}
+
+/********** PROJECTS STYLES **********/
+#projects {
+  margin-bottom: 50px;
+}
+
+#projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  position: relative;
+  margin: 10px;
+  width: 30%;
+  max-width: 512px;
+  max-height: 288px;
+  box-sizing: content-box;
+}
+
+.project-box:hover .project-info {
+  height: 100%;
+  opacity: 1;
+}
+
+.project-box img {
+  width: 100%;
+  max-width: 512px;
+}
+
+.project-info {
+  display: inline-block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0, 163, 136, 0.9);
+  padding: 15px 10px;
+  color: #f7f3f3;
+  transition: height 0.5s, opacity 0.5s;
+}
+
+.project-info > p {
+  margin: 5px;
+  font-size: .75em;
+}
+
+.project-info > button {
+  border: 3px solid #fff;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 7px auto;
+  font-size: .75em;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .project-box {
+    width: 45%;
+  }
+
+  .project-info > p {
+    font-size: 1em;
+  }
+
+  .project-info > button {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 630px) {
+  .project-box {
+    width: 90%;
+  }
+
+  .project-info > p {
+    font-size: 1.5em;
+  }
+
+  .project-info > button {
+    font-size: 1.5em;
+  }
+}
+
+/********** RESUME STYLES **********/
+#skills {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#education-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.award {
+  border-bottom: 1px dashed #00A388;
+  padding: 15px;
+}
+
+.award a {
+  color: #00A388;
+}
+
+.award p {
+  margin: .5em;
+}
+
+/********** CONTACT STYLES **********/
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFF9D;
+  border-radius: 25px;
+  margin: 0 auto;
+  position: relative;
+  top: 65px;
+}
+
+#contact label {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.8em;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  font-size: 1.8em;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-family: "PT Sans", sans-serif;
+}
+
+#contact textarea {
+  resize: vertical;
+  height: 300px;
+}
+
+#contact input:focus, #contact textarea:focus {
+  border-bottom-width: 3px;
+  outline: none;
+}
+
+#contact input[type="submit"] {
+  margin: 15px;
+  width: 75%;
+  background-color: #a1a125;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.253);
+  border: none;
+  border-radius: 12px;
+  position: relative;
+}
+
+#contact input[type="submit"]:hover {
+  box-shadow: 0 4px rgba(0, 0, 0, 0.253);
+  top: 2px;
+}
+
+#contact input[type="submit"]:focus {
+  box-shadow: 0 0;
+  top: 6px;
+}
+
+/***** FOOTER STYLES *****/
+footer {
+  background-color: #00A388;
+  padding: 100px 7px 75px;
+  text-align: center;
+}
+
+footer i {
+  color: #f7f3f3;
+  margin: 0 10px;
+}
+
+footer p {
+  margin-top: 10px;
+  color: #f7f3f3;
+  font-size: 1.3em;
+}

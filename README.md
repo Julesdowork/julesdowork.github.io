@@ -1,5 +1,4 @@
 # julesdowork.github.io
-My published site
+My Github Portfolio Site
 
-I don't really know what's gonna go here yet
-But it will be fun!
+Here you can find some of my best projects.

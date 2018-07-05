@@ -1,20 +1,199 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Julian McNeill | Web Developer</title>
-        <link href="styles/styles.css" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
-        <h1>Julian McNeill</h1>
-        <img src="images/firefox-logo.png" alt="The Firefox logo. A flaming fox wrapped around the entire world."
-            width="256px" height="256px">
-        <h2>Projects</h2>
-        <p><a href="http://jules-yelpcamp.herokuapp.com">YelpCamp</a></p>
-        <p><a href="roundsound/index.html">RoundSound</a></p>
-        <p><a href="jquery-todo/index.html">To-Do List</a></p>
-        <p><a href="color-game/index.html">Color Guessing Game</a></p>
-        <script src="scripts/main.js"></script>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Julian McNeill | Front-End Web Developer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header id="top">
+    <nav>
+      <img src="images/icon-128.png" alt="JulianMcNeill.com logo">
+      <i class="fas fa-bars fa-5x"></i>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h1>Hey, I'm Julian</h1>
+      <p><strong>I'm a Front End Web Developer who loves designing beautiful and user-friendly websites.</strong></p>
+      <img id="profile-pic" src="images/profile_pic.jpg" alt="A picture of Julian">
+      <p>What should you know about me?<br>Well, I'm a...</p>
+      <ul>
+        <li>Front End Developer with ample experience using server-side technologies</li>
+        <li>Game Designer and Programmer interested in combat and other core game
+          mechanics</li>
+        <li>Lover of clean, simple design and conveys a lot with a little</li>
+        <li>Curious person looking for the best new technologies to improve
+          workflows</li>
+        <li>Mobile-friendly developer who wants to give the same level of
+          content across as many devices as possible</li>
+      </ul>
+      <button><a href="#contact">Get In Touch!</a></button>
+    </section>
+    <hr>
+    <section id="projects">
+      <h1>Recent Projects</h1>
+      <div id="projects-container">
+        <div class="project-box">
+          <img src="images/smart_brain.jpg" alt="Smart Brain app">
+          <div class="project-info">
+            <h3>Smart Brain</h3>
+            <p>A facial recognition app made with React and communicating with
+              Postgres and Redis servers.</p>
+            <button class="project-btn">
+              <a href="https://jules-smart-brain.herokuapp.com" target="_blank">Visit Site</a>
+            </button>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="images/robofriends.jpg" alt="Robofriends app">
+          <div class="project-info">
+            <h3>Robofriends</h3>
+            <p>A React/Redux site that gets users from an API, gets a Robot
+              avatar for them using another API, and stores them in a container.</p>
+            <button class="project-btn">
+              <a href="https://julesdowork.github.io/Robofriends-Redux" target="_blank">Visit Site</a>
+            </button>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="images/warbler.jpg" alt="Warbler app">
+          <div class="project-info">
+            <h3>Warbler</h3>
+            <p>A Twitter clone made with React/Redux. Uses authentication to make
+              sure can only edit their own content.</p>
+            <button class="project-btn">
+              <a href="https://jules-warbler.herokuapp.com" target="_blank">Visit Site</a>
+            </button>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="images/yelpcamp.jpg" alt="YelpCamp app">
+          <div class="project-info">
+            <h3>YelpCamp</h3>
+            <p>A Yelp-like API where users can upload campgrounds and comment on other users' uploads.
+              Uses MongoDB to store user account and Passport.js for user authorization.</p>
+            <button class="project-btn">
+              <a href="https://jules-yelpcamp.herokuapp.com" target="_blank">Visit Site</a>
+            </button>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="images/roundsound.jpg" alt="RoundSound app">
+          <div class="project-info">
+            <h3>RoundSound</h3>
+            <p>A Patapon clone made with Howler.js for sounds and Paper.js for animations.
+              By typing words, users can create sounds. <strong>Currently doesn't work on mobile devices.</strong></p>
+            <button class="project-btn">
+              <a href="https://julesdowork.github.io/RoundSound" target="_blank">Visit Site</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button><a href="projects.html">View More</a></button>
+    </section>
+    <hr>
+    <section id="resume">
+      <h1>My Resume</h1>
+      <h2>Skills</h2>
+      <div id="skills">
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>JavaScript</p>
+        <p>jQuery</p>
+        <p>Bootstrap 4</p>
+        <p>Node.js</p>
+        <p>npm</p>
+        <p>Express.js</p>
+        <p>MongoDB</p>
+        <p>PostgreSQL</p>
+        <p>REST</p>
+        <p>React.js</p>
+        <p>Redux</p>
+        <p>Git &amp; GitHub</p>
+        <p>SASS</p>
+        <p>APIs</p>
+        <p>Testing</p>
+        <p>Authentication</p>
+        <p>Authorization</p>
+        <p>D3.js</p>
+        <p>SVG / Canvas</p>
+        <p>Python</p>
+        <p>C++</p>
+        <p>Java</p>
+        <p>Python</p>
+        <p>Adobe CC</p>
+        <p>Blender</p>
+        <p>Unity</p>
+      </div>
+      <h2>Education</h2>
+      <div id="education-container">
+        <div style="text-align: left">
+          <p><strong>University of Florida</strong></p>
+          <p>BA in <strong>Digital Arts and Sciences</strong></p>
+          <p>Specialized <strong>in Systems Design</strong></p>
+        </div>
+        <div style="text-align: right">
+          <p>Gainesville, FL</p>
+          <p>August 2011 - April 2016</p>
+        </div>
+      </div>
+      <h2>Awards &amp; Certifications</h2>
+      <div class="award">
+        <a href="https://www.udemy.com/the-complete-junior-to-senior-web-developer-roadmap/">The Complete Junior to Senior Web Developer Roadmap (2018)</a>
+        <p>Awarded on: 6/27/2018</p>
+      </div>
+      <div class="award">
+        <a href="https://www.udemy.com/the-advanced-web-developer-bootcamp/">
+          The Advanced Web Developer Bootcamp</a>
+        <p>Awarded on: 6/15/2018</p>
+      </div>
+      <div class="award">
+        <a href="https://www.udemy.com/the-web-developer-bootcamp/">
+          The Web Developer Bootcamp</a>
+        <p>Awarded on: 5/28/2018</p>
+      </div>
+      <div class="award">
+        <a href="https://www.udemy.com/the-complete-web-developer-in-2018/">
+          The Complete Web Developer in 2018: Zero to Mastery</a>
+        <p>Awarded on: 4/20/2018</p>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>Contact</h1>
+      <p>If you'd like to work with me,
+        <a href="mailto:julianmcneill16@gmail.com">send me an email</a>.
+      </p>
+      <form action="https://formspree.io/julianmcneill16@gmail.com" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <a href="https://www.linkedin.com/in/julian-mcneill/"><i class="fab fa-linkedin fa-3x"></i></a>
+    <a href="https://github.com/Julesdowork"><i class="fab fa-github fa-3x"></i></a>
+    <a href="mailto:julianmcneill16@gmail.com"><i class="far fa-envelope fa-3x"></i></a>
+    <p>Made by yours truly. &copy; 2018</p>
+    <p><a href="#top">Back to Top</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
 </html>
