@@ -226,7 +226,7 @@ header a:hover {
 
 .project-info > p {
   margin: 5px;
-  font-size: .75em;
+  font-size: 1em;
 }
 
 .project-info > button {
@@ -234,7 +234,7 @@ header a:hover {
   border-radius: 25px;
   padding: 10px;
   margin: 7px auto;
-  font-size: .75em;
+  font-size: 1em;
   color: #fff;
 }
 
